@@ -1,1 +1,16 @@
 /* _variable.scss */
+
+$bg-color: linear-gradient(
+  180deg,
+  rgba(171, 66, 228, 1) 10%,
+  rgba(224, 9, 153, 1) 100%
+);
+
+$font-color: #ffffff;
+
+$button-color: #2b2f47;
+
+$small-font: clamp(18px, 3vw, 20px);
+$medium-font: clamp(24px, 5vw, 32px);
+$large-font: clamp(32px, 10vw, 60px);
+$default-med-font: 24px;

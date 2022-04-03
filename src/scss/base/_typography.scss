@@ -1,1 +1,27 @@
 /* _typography.scss */
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+li {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+}

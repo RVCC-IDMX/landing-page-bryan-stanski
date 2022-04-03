@@ -1,2 +1,88 @@
 /* _hero.scss */
-@use "../abstracts/variables" as *;
+@use '../abstracts/variables' as *;
+
+.hero {
+  display: grid;
+  height: 90vh;
+  grid-template-rows: 0.1fr 1fr 0.5fr;
+
+  &__text {
+    margin: 0.2rem 1rem;
+  }
+
+  &__title {
+    font-size: $large-font;
+    font-weight: 450;
+    line-height: 1;
+  }
+
+  &__subtitle {
+    font-size: $medium-font;
+    font-weight: 380;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: $small-font;
+    max-width: 85ch;
+    margin-bottom: 5px;
+  }
+
+  &__image {
+    position: relative;
+    background-image: url('../images/hero-image.svg');
+    background-repeat: no-repeat;
+    background-position-x: -150px;
+    background-position-y: center;
+    background-size: 200%;
+    z-index: 2;
+  }
+}
+
+.cta {
+  justify-self: center;
+  position: absolute;
+  bottom: -1rem;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__btn {
+    color: inherit;
+    cursor: pointer;
+    background-color: $button-color;
+    font-size: $default-med-font;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    border: none;
+    padding: 1rem 3rem;
+  }
+}
+
+/* Tablet Sizing */
+@media screen and (min-width: 768px) {
+  .hero {
+    grid-template-rows: 0.5fr 2fr;
+
+    &__text {
+      margin: 2.5rem 3rem;
+    }
+
+    &__image {
+      background-position-x: -30px;
+      background-size: 150%;
+      background-position-y: 0%;
+    }
+  }
+
+  .cta {
+    justify-self: flex-start;
+    top: 25rem;
+    left: 2rem;
+    transform: none;
+  }
+}
+
+/* Desktop Sizing */
+@media screen and (min-width: 980px) {
+}
