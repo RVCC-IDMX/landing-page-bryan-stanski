@@ -94,3 +94,20 @@
     }
   }
 }
+
+/* Desktop Sizing */
+@media screen and (min-width: 980px) {
+  .nav {
+    &__menu {
+      margin-left: 5rem;
+      li {
+        &:not(:first-child) {
+          margin-top: -3.5rem;
+        }
+        &:last-child {
+          margin-inline-end: 20rem;
+        }
+      }
+    }
+  }
+}

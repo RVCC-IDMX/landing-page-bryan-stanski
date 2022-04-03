@@ -85,4 +85,15 @@
 
 /* Desktop Sizing */
 @media screen and (min-width: 980px) {
+  .hero {
+    margin-left: 2rem;
+
+    &__image {
+      background-size: 95%;
+      background-position-x: 140px;
+    }
+  }
+  .cta {
+    margin-left: 2rem;
+  }
 }
